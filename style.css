@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 14px;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #000;
+    color: #fff;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    list-style: none;
+}
+
+.header{
+    width: 960px;
+    height: 90px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 100px;
+    overflow: hidden;
+}
+.logo img{
+    width: 100%;
+}
+.container{
+    width: 960px;
+    margin: 0 auto;
+}
+.hero{
+    position: relative;
+    width: 100%;
+    padding: 200px 0;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.left{
+    position: relative;
+    z-index: 1;
+    font-size: 1.2rem;
+    width: 500px;
+}
+.name{
+    position: relative;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.name::after{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: lightcoral;
+    border-radius: 50%;
+    bottom: 22px;
+    margin-left: 10px;
+}
+
+.right{
+    width: 400px;
+    height: 400px;
+    background: url(./assets/profile.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.highlight{
+    display: inline-block;
+    border-bottom: 1px solid lightcoral;
+    padding-bottom: 5px;
+    text-transform: capitalize;
+    margin: 20px 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.content .side-1, .content .side-2{
+    width: 50%;
+}
+
+.content-heading{
+    color: lightcoral;
+    font-size: 1.15rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.skills p{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.skills-content p{
+    color: #acaaaa;
+}
+
+.grey{
+    color: grey;
+}
+
+.lg-heading{
+    font-size: 3rem;
+    width: 100%;
+
+}
+.grid-wrapper{
+    width: 100%;
+}
+.grid-container{
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+
+    margin: 50px 0;
+}
+
+.grid-container .item{
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.item-heading{
+    font-size: 1.5rem;
+}
+.item ul{
+    margin: 20px 0;
+}
+.item ul li{
+    font-size: 1.2rem;
+}
+
+.about-me{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.about-me-bg{
+    max-width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.dull-bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+
+}
+
+.about-me-content{
+    position: relative;
+    z-index: 1;
+}
+
+.about-content{
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    align-items: center;
+}
+.about-me-quote{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.about-1, .about-2{
+    width: 50%;
+}
+
+
+@media screen and (max-width: 960px) {
+    .container{
+        width: 100%;
+    }
+    .header{
+        width: 100%;
+    }
+
+    .hero{
+        padding: 100px 0;
+    }
+
+    .left{
+        text-align: center;
+        width: 100%;
+
+        margin: 50px;
+    }
+
+    .right{
+        width: 100%;
+        height: 400px;
+        background: url(./assets/profile.jpg);
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        opacity: 0.5;
+    }
+
+    .content{
+        flex-direction: column;
+        text-align: center;
+        margin: 50px;
+    }
+    
+    .content .side-1, .content .side-2{
+        width: 100%;
+    }
+
+    .grid-wrapper{
+        width: 100%;
+        padding: 50px;
+        box-sizing: border-box;
+    }
+
+    .lg-heading{
+        text-align: center;
+    }
+
+    .grid-container .item{
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+   
+}
